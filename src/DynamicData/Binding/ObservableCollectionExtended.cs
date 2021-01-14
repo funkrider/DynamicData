@@ -20,6 +20,10 @@ namespace DynamicData.Binding
         private bool _suspendCount;
 
         private bool _suspendNotifications;
+        
+        public bool IsNotificationsSuspended => _suspendNotifications;
+        
+        public bool IsCountSuspended => _suspendCount;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ObservableCollectionExtended{T}"/> class.
